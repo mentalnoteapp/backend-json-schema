@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Note",
+    "description": "A user instance.",
+    "type": "object",
+    "properties": {
+      "id": {
+          "description": "The unique identifier for a user",
+          "type": "integer"
+      },
+      "username": {
+          "description": "The username of a user",
+          "type": "string"
+      },
+      "username": {
+          "description": "The username of a user",
+          "type": "string"
+      },
+      "email": {
+          "description": "The email of a user",
+          "type": "string"
+      },
+      "password": {
+          "description": "The password of a user",
+          "type": "string"
+      },
+      "tags": {"$ref": "tag.json"},
+      "notes": {"$ref": "note.json"},
+    },
+    "required": ["id", "username", "password"]
+}
