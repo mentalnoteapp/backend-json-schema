@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Note",
+    "description": "A tag instance.",
+    "type": "object",
+    "properties": {
+      "id": {
+          "description": "The unique identifier for a tag",
+          "type": "integer"
+      },
+      "name": {
+          "description": "The name of a note",
+          "type": "string"
+      },
+      "notes": {"$ref": "note.json"},
+    },
+    "required": ["id", "name"]
+}
