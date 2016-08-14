@@ -14,5 +14,6 @@
       },
       "notes": {"$ref": "note.json"},
     },
-    "required": ["id", "name"]
+    "owner": {"$ref": "user.json"},
+    "required": ["id", "name", "owner"]
 }
