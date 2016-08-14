@@ -21,6 +21,7 @@
           "description": "The status of a note",
           "type": "boolean"
       },
+      "owner": {"$ref": "user.json"}
     },
-    "required": ["id", "body"]
+    "required": ["id", "body", "owner"]
 }
